@@ -1,28 +1,28 @@
-Realtime Data Analytics Using Apache Spark
-Overview
-This project builds a real-time social media analytics pipeline using Apache Spark, Python, and Kafka. It leverages Spark functionalities (SparkSQL, Spark Streaming, and MLlib) to train machine learning models via slow batch processing and applies them to real-time streaming data for fast predictions.
+# Realtime Data Analytics Using Apache Spark
+Realtime social media data analytics with Apache Spark, Python, Kafka, Pandas, etc
 
-Data Sources
-The pipeline ingests both historical and streaming data via APIs from the following platforms:
 
-Twitter: Twitter Apps API
+### Description
 
-MeetUp: Meetup API
+Project uses Apache Spark functionalities (SparkSQL, Spark Streaming, MLib) to build machine learning models (Batch Processing-Slow) and then apply the model with (Spark Streaming-Fast) to predict new output.
 
-GitHub: GitHub Developer API
+### Data MashUp
+We utilize historical and streaming data from different social media networks through network provided APIs.
+* Twitter - https://apps.twitter.com/
+* MeetUp  - https://secure.meetup.com/meetup_api
+* GitHub - [Guides :    https://developer.github.com/v3/, API Calls:  https://api.github.com/, API Keys :  https://github.com/settings/developers, Tokens :    https://github.com/settings/tokens
 
-Tech Stack & Tools
-Core Framework: Apache Spark (SparkSQL, Spark Streaming, Spark MLlib, GraphX)
 
-Messaging: Apache Kafka
 
-Environment: DataBricks Community Edition, Anaconda (Python 2.7)
+### Tools
+* DataBricks Community Edition
+* Anaconda Python 2.7 Distro (Pandas, etc)
+* Apache Spark (SparkSQL, Spark Streaming, Spark MLib, GraphX)
+* Apache Kafka (Realtime distributed message passing tool)
+* Persistent Data Store (RDMBS:MySQL, Columnar:CSV, Casandra, Document:MongoDB)
 
-Data Storage: MySQL (RDBMS), CSV (Columnar), Cassandra, MongoDB (Document)
 
-Installation & Setup
-To get started, install the required Python libraries using pip:
-
-Bash
-pip install Twitter
-pip install PyGithub
+### Required Libraries
+> pip install Twitter <br>
+> pip install PyGithub <br>
+> pip install
